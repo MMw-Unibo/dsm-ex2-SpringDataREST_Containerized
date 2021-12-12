@@ -1,5 +1,5 @@
 # dsm-ex2-SpringDataREST_Containerized
-
+``` bash
  docker ps
  docker ps -a | awk '{print $1}' | while read id; do  docker rm $id; done
  docker run -d --env MONGO_INITDB_ROOT_USERNAME=mongoadmin --env MONGO_INITDB_ROOT_PASSWORD=secret mongo
@@ -22,4 +22,4 @@
 
  docker-compose build 
  docker compose  up -d
- 
+ ```
