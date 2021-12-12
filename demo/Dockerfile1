@@ -1,0 +1,5 @@
+FROM maven:3-adoptopenjdk-11
+COPY . /usr/src/demo
+WORKDIR /usr/src/demo
+RUN mvn clean
+CMD ["mvn", "spring-boot:run"]
